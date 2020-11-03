@@ -12,10 +12,10 @@
 }
 .register-title{
     text-align: center;
-    color:white;
+    color:#f4f3f8;
     font-size:3em;
-    margin-top:5%;
-    text-shadow: -1px 0 rgb(82, 81, 81), 0 1px rgb(82, 81, 81), 1px 0 rgb(82, 81, 81), 0 -1px rgb(82, 81, 81);
+    margin-top:2.5%;
+  
 
 }
 .sign-up-google img{
@@ -27,7 +27,7 @@
     padding:20px;
     margin-left:auto;
     margin-right:auto;
-    height:450px;
+    height:480px;
     max-width:calc(var(--size-form-register) / 1.5);
     width:80vw;
     border-radius: 15px;
@@ -40,7 +40,7 @@
 }
 .register-form{  
     max-width:calc(var(--size-form-register) / 1.5); 
-    width:80vw;
+    width:100%;
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -48,20 +48,23 @@
     align-items:center;
 
 }
+#message{
+    margin:10px;
+    align-self: flex-start;
+}
 .container-register{
     display:flex;
     flex-direction: column;
-    max-width:2000px;
     width:100vw;
     height:100vh;
     margin-left:auto;
     margin-right:auto;
-    background-image:url(../images/clouds-background.jpg);
-    background-repeat: no-repeat;
+    background: rgb(120,192,216);
+    background: linear-gradient(180deg, rgba(120,192,216,1) 0%, rgba(192,216,240,1) 51%, rgba(240,216,216,1) 100%);
     background-size: cover;
 }
 .register-form label input, .register-form .names label input{
-    max-width:calc(var(--size-form-register) / 1.5);
+    max-width:calc(var(--size-form-register) / 1.6);
     width:70vw;
     height:35px;
     margin:5px;
@@ -84,27 +87,34 @@ input[type=submit]{
 
 }
 .register-form .names label input{
-    max-width:calc(var(--size-form-register) / 3.125);
-    width:35vw;
-    padding-left:0;
-    padding-right:0;
-    
+    max-width:calc(var(--size-form-register) / 3.3);
+    width:33vw;
+    margin-left: -5px;
+    margin-right: -5px;   
+}
+#firstName{
+    margin-right:2.5px;
+}
+#lastName{
+    margin-left:2.5px;
 }
 .names{
+    max-width:calc(var(--size-form-register) / 1.6);
+    width: 70vw;
     display:flex;
-    align-items: stretch;
-    align-content: space-between;
-    margin:5px;
-    padding:5px;
-    margin-bottom:0;
-    padding-bottom:0;
+    justify-content: space-between;
+    margin:0px;
+    padding:0px;
+  
     
 }
 body{
     --size-form-register:1400px;
    margin:0;
    padding:0;
+   font-family: 'Dosis', sans-serif;
 }
-
-
+input[type="submit"]:hover{
+    box-shadow: 0px 0px 26px 3px rgba(255,255,255,0.62);
+}
 
