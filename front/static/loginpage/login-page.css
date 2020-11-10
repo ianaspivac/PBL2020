@@ -1,0 +1,130 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+    text-align: center;
+}
+
+.container-login{
+    display:flex;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction:row;
+    margin:auto;
+    width:100%;
+    max-width: 1800px;
+    background-size: cover;  
+    background: rgb(120,192,216);
+    background: linear-gradient(180deg, rgba(120,192,216,1) 0%, rgba(192,216,240,1) 51%, rgba(240,216,216,1) 100%);
+    background-size: cover; 
+}
+
+.login-form{  
+    max-width:calc(var(--size-form-register) / 1.5); 
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items:center;
+    border-radius: 25px;
+}
+
+.login{
+  
+    background: #FCFAFA;
+    width:500px;
+    height: 700px;
+}
+
+
+
+.header-login{
+    text-align: center;
+    font-family: 'Sansita', sans-serif;
+    font-size:2em;
+    padding-top: 15vh;
+  
+
+}
+
+input[type=email], input[type=password] {
+    font-family: 'Dosis', sans-serif;
+    width: 270px;
+    height: 40px;
+    border: solid 1px white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#email{
+    margin-top: 7vh;
+    margin-bottom: 1vh;
+    background-color: #C0D8F0;
+    border-radius: 5px;
+}
+
+#password{
+    background-color: #C0D8F0;
+    border-radius: 5px;
+}
+
+.forgot-password{
+    margin-top: 10px;
+    margin-bottom: 4vh;
+    font-size: 0.8em;
+    font-family: 'Dosis', sans-serif;
+}
+
+#signin-signup{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input[type="submit"]:hover{
+    box-shadow: 0px 0px 26px 3px rgba(255,255,255,0.62);
+}
+input[type=submit]{   
+    cursor: pointer; 
+    max-width:10em;
+    width: 6em;
+    font-size:1.3em;
+    height:1.9em;
+    font-family: 'Sansita', sans-serif;
+    border-radius: 18px;
+    background: #F0D8D8;
+    border:solid 2px #FEFAFA;
+}
+
+.sign-in-google img{
+    width:25px;
+    margin:5px;
+    margin-bottom:-5px;
+}
+
+.sign-in-google{
+    font-family: 'Sansita', sans-serif;
+    text-align: center;
+    font-size:1.2em;
+    cursor:pointer;
+    margin-top:30px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .image{
+        width:0;
+        height: 0;
+    }
+
+    .login{
+        width: 100vw;
+    }
+}
