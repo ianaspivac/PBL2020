@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Morpheus</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="./user-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-user-page">
+        <div class="link-update-info"><a href="#">View my info</a></div>
+    <div class="sleep-info-container">
+        <div class="sleep-card">
+            <div class="sleep-info-flex">
+                <div class="sleep-icon">
+                    <img src="cloudy-night.svg" />
+                </div>
+                <div id="progress-circle1">
+                </div>
+            </div>
+            <div class="sleep-card-title">
+                <h2>
+                    Hours slept this week
+                </h2>
+            </div>
+        </div>
+
+        <div class="sleep-card2">
+            <div class="sleep-info-flex">
+                <div class="sleep-icon">
+                    <img src="pillow.svg" />
+                </div>
+                <div id="progress-circle2">
+                </div>
+            </div>
+            <div class="sleep-card-title">
+                <h2>
+                    Sleep quality
+                </h2>
+            </div>
+        </div>
+        <div class="risks-container">
+            <div class="risk">
+                <h2 id="risk1"></h2>
+                <div class="number-risk" id="risk-number-1">
+                </div>
+            </div>
+            <div class="risk">
+                <h2 id="risk2"></h2>
+                <div class="number-risk" id="risk-number-2">
+                </div>
+            </div>
+            <div class="risk">
+                <h2 id="risk3"></h2>
+                <div class="number-risk" id="risk-number-3">
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="plot-container">
+            <div class="plot-size">
+              <h2>Plot name</h2>
+              <div class="plot">
+                <canvas id="line-chart1" width="300" height="200"></canvas>
+              </div>
+            </div>
+            <div class="plot-size">
+              <h2>Plot name</h2>
+              <div class="plot">
+                <canvas id="line-chart2" width="300" height="200"></canvas>
+              </div>
+            </div>
+            <div class="plot-size">
+              <h2>Plot name</h2>
+              <div class="plot">
+                <canvas id="line-chart3" width="300" height="200"></canvas>
+              </div>
+            </div>
+            <div class="plot-size">
+              <h2>Plot name</h2>
+              <div class="plot">
+                <canvas id="line-chart4" width="300" height="200"></canvas>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="../js-progressbar/node_modules/progressbar.js/dist/progressbar.js"></script>
+   
+    
+</body>
+<script src="../js-lib-plot/chart.js/dist/Chart.js"></script>
+<script src="./user-page.js"></script>
+
+</html>

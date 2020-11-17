@@ -86,11 +86,13 @@ input[type="password"] {
   justify-content: space-between;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover,#sign-up-submit {
   background-color: #fcfafa;
   border-color: #f0d8d8;
 }
-input[type="submit"] {
+input[type="submit"],#sign-up-button {
+  color:black;
+  text-decoration:none;
   cursor: pointer;
   max-width: 10em;
   width: 6em;
