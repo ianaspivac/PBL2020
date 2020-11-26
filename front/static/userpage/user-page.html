@@ -11,43 +11,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
 </head>
 <script src="../js-progressbar/node_modules/progressbar.js/dist/progressbar.js"></script>
-    <script src="../js-lib-plot/chart.js/dist/Chart.js"></script>
-    
+<script src="../js-lib-plot/chart.js/dist/Chart.js"></script>
+
 <body>
     <div class="container-user-page">
         <div class="link-update-info"><a href="#">View my info</a></div>
-    <div class="sleep-info-container">
-        <div class="sleep-card">
-            <div class="sleep-info-flex">
-                <div class="sleep-icon">
-                    <img src="cloudy-night.svg" />
+        <div class="sleep-info-container">
+            <div class="sleep-card">
+                <div class="sleep-info-flex">
+                    <div class="sleep-icon">
+                        <img src="cloudy-night.svg" />
+                    </div>
+                    <div id="progress-circle1">
+                    </div>
                 </div>
-                <div id="progress-circle1">
+                <div class="sleep-card-title">
+                    <h2>
+                        Hours slept this week
+                    </h2>
                 </div>
             </div>
-            <div class="sleep-card-title">
-                <h2>
-                    Hours slept this week
-                </h2>
-            </div>
-        </div>
 
-        <div class="sleep-card2">
-            <div class="sleep-info-flex">
-                <div class="sleep-icon">
-                    <img src="pillow.svg" />
+            <div class="sleep-card2">
+                <div class="sleep-info-flex">
+                    <div class="sleep-icon">
+                        <img src="pillow.svg" />
+                    </div>
+                    <div id="progress-circle2">
+                    </div>
                 </div>
-                <div id="progress-circle2">
+                <div class="sleep-card-title">
+                    <h2>
+                        Sleep quality
+                    </h2>
                 </div>
             </div>
-            <div class="sleep-card-title">
-                <h2>
-                    Sleep quality
-                </h2>
-            </div>
-        </div>
-        <div class="risks-container">
-           
+            <div class="risks-container">
+
                 <div class="number-risk" id="risk-number-1">
                 </div>
                 <div class="sleep-card-title">
@@ -55,85 +55,267 @@
                         IDS
                     </h2>
                 </div>
-           
+
+            </div>
         </div>
+        <div class="container-calendar">
+            <div class="month-year-header">
+                <h2 id="month-year">
+                    <h2>
+            </div>
+            <div class="calendar">
+                <div class="empty">
+                </div>
+                <div id="day1">
+                </div>
+                <div id="day2">
+                </div>
+                <div id="day3">
+                </div>
+                <div id="day4">
+                </div>
+                <div id="day5">
+                </div>
+                <div id="day6">
+                </div>
+                <div id="day7">
+                </div>
+                <div class="ora">
+                    <div id="orele"></div>
+                    <div>05:00</div>
+                    <div>06:00</div>
+                    <div>07:00</div>
+                    <div>08:00</div>
+                    <div>09:00</div>
+                    <div>10:00</div>
+                    <div>11:00</div>
+                    <div>12:00</div>
+                    <div>13:00</div>
+                    <div>14:00</div>
+                    <div>15:00</div>
+                    <div>16:00</div>
+                    <div>17:00</div>
+                    <div>18:00</div>
+                    <div>19:00</div>
+                    <div>20:00</div>
+                    <div>21:00</div>
+                    <div>22:00</div>
+                    <div>23:00</div>
+                    <div>00:00</div>
+                    <div>01:00</div>
+                    <div>02:00</div>
+                </div>
+                <div class="ora" id="1day">
+                    <div id="date1">
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="ora" id="2day">
+                    <div id="date2">
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="ora" id="3day">
+                    <div id="date3">
+                    </div>
+                    <div></div>
+                    <div>
+                        <div id="sleep-time">Wake up</div>
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="ora" id="4day">
+                    <div id="date4">
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="ora" id="5day">
+                    <div id="date5">
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="ora" id="6day">
+                    <div id="date6">
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="ora" id="7day">
+                    <div id="date7">
+                    </div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
         </div>
-<div class="container-calendar">
-    <div class="month-year-header">
-        <h2 id="month-year">
-            <h2>
-    </div>
-    <div class="calendar">
-        <div class="empty">
-        </div>
-        <div id="day1">
-        </div>
-        <div id="day2">
-        </div>
-        <div id="day3">
-        </div>
-        <div id="day4">
-        </div>
-        <div id="day5">
-        </div>
-        <div id="day6">
-        </div>
-        <div id="day7">
-        </div>
-        <div class="ora">
-            <br>
-            <div>07:00</div>
-            <div>10:00</div>
-            <div>13:00</div>
-            <div>16:00</div>
-            <div>19:00</div>
-            <div>21:00</div>
-        </div>
-        <div id="date1">
-        </div>
-        <div id="date2">
-        </div>
-        <div id="date3">
-        </div>
-        <div id="date4">
-        </div>
-        <div id="date5">
-        </div>
-        <div id="date6">
-        </div>
-        <div id="date7">
-        </div>
-    </div>
-</div>
         <div class="plot-container">
             <div class="plot-size">
-              <h2>Plot name</h2>
-              <div class="plot">
-                <canvas id="line-chart1" width="300" height="200"></canvas>
-              </div>
+                <h2>Hours </h2>
+                <div class="plot">
+                    <canvas id="line-chart1" width="500" height="300"></canvas>
+                </div>
             </div>
             <div class="plot-size">
-              <h2>Plot name</h2>
-              <div class="plot">
-                <canvas id="line-chart2" width="300" height="200"></canvas>
-              </div>
+                <h2>Plot name</h2>
+                <div class="plot">
+                    <canvas id="line-chart2" width="500" height="300"></canvas>
+                </div>
             </div>
             <div class="plot-size">
-              <h2>Plot name</h2>
-              <div class="plot">
-                <canvas id="line-chart3" width="300" height="200"></canvas>
-              </div>
+                <h2>Plot name</h2>
+                <div class="plot">
+                    <canvas id="line-chart3" width="500" height="300"></canvas>
+                </div>
             </div>
-            <div class="plot-size">
-              <h2>Plot name</h2>
-              <div class="plot">
-                <canvas id="line-chart4" width="300" height="200"></canvas>
-              </div>
-            </div>
-          </div>
+
+        </div>
     </div>
-    
-    
+
+
 </body>
 <script src="./user-page.js"></script>
 
