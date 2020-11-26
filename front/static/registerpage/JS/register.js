@@ -11,16 +11,4 @@
   }
   }
 
-function validateForm() {
-    var a = document.getElementById('firstName').value;
-    var b = document.getElementById('lastName').value;
-    var c = document.getElementById('email').value;
-    var d = document.getElementById('birthDate').value;
-    var e = document.getElementById('password').value;
-    var f = document.getElementById('passwordConfirm').value;
-    console.log(a);
-    if (!(a == null || a == "", b == null || b == "", c == null || c == "", d == null || d == "", e == null || e == "", f == null || f == "")) {
-      document.getElementById('submitbutton').disabled = false;}
-      else
-      document.getElementById('submitbutton').disabled = 'disabled';
-  }
+
