@@ -9,8 +9,9 @@ body {
     align-items: center;
     flex-direction:column;
     margin:auto;
-    width:100%;
     height: 100vh;
+    min-height:800px;
+    width:100%;  
     background: rgb(120,192,216);
     background: linear-gradient(180deg, rgba(120,192,216,1) 0%, rgba(192,216,240,1) 51%, rgba(240,216,216,1) 100%);
     background-size: cover;
@@ -39,7 +40,7 @@ body {
 .gender h2,.disease h2,.region h2,.weight h2,.height h2{
     margin:10px;
     margin-left:0;
-    font-size:1.2em;
+    font-size:1em;
 }
 .disease{
     margin-bottom:30px;
@@ -61,7 +62,6 @@ input[type=submit]{
     max-width:10em;
     width: 7em;
     font-size:1.3em;
-    height:1.8em;
     font-family: 'Sansita', sans-serif;
     border-radius: 30px;
     background:#C0D8F0;
@@ -69,13 +69,12 @@ input[type=submit]{
 }
 input{
     padding:5px;
-    font-size: 1em;
     border-radius: 2px;
 }
 input[type=text] {
     width: 270px;
-    height: 30px;
     border: solid 1px white;
+    height:30px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -88,12 +87,11 @@ input[type=number] {
     -moz-appearance: textfield;
     width: 100px;
     height: 30px;
-    font-size: 1em;
     border: 1px white;
 }
 
 label {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 @media only screen and (max-width: 600px) {
     #save-submit{
