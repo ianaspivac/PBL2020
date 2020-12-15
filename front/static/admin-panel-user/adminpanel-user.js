@@ -3,10 +3,9 @@
 //am utilizat librarie chart.js, ca sa lucreze,puneti va rog undeva mapa js-lib-plot (va trebui de schimbat directoriul in html )
 //<script src="../js-lib-plot/chart.js/dist/Chart.js"></script> asa arat randul care se va modifica
 
-let data1 = [1, 2, 10, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-let data2 = [1, 2, 10, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-let data3 = [1, 2, 10, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-let data4 = [1, 2, 10, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+let data1 = [6, 7, 10, 5, 5, 6, 7, 8, 9, 9, 8, 7];
+let data2 = [80, 76, 78, 90, 87, 78, 89, 80, 60, 65, 76, 70];
+let data3 = [9, 7, 10, 5, 5, 6, 7, 8, 9, 10, 10, 10];
 let name = "Name";
 let age = "18";
 let gender = "Male";
@@ -137,7 +136,7 @@ new Chart(document.getElementById("line-chart3"), {
           data3[10],
           data3[11],
         ],
-        label: "Hours slept",
+        label: "Sleep quality %",
         borderColor: "#3e95cd",
         fill: false,
       },
@@ -178,7 +177,7 @@ new Chart(document.getElementById("line-chart4"), {
           data4[10],
           data4[11],
         ],
-        label: "Hours slept",
+        label: "IDS %",
         borderColor: "#3e95cd",
         fill: false,
       },

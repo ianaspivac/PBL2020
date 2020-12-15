@@ -16,6 +16,7 @@
 <body>
     <div class="container-user-page">
         <div class="link-update-info"><a href="#">View my info</a></div>
+        <div class="google"><a href="#" target="_blank">Google syncronization</a></div>
         <div class="sleep-info-container">
             <div class="sleep-card">
                 <div class="sleep-info-flex">
@@ -86,6 +87,10 @@
                 <!--Mai departe merge un rand cu coloane ,prima coloana e mai diferita,ea contine doar orele -->
                 <div class="ora">
                     <div id="orele"></div>
+                    <div>01:00</div>
+                    <div>02:00</div>
+                    <div>03:00</div>
+                    <div>04:00</div>
                     <div>05:00</div>
                     <div>06:00</div>
                     <div>07:00</div>
@@ -106,38 +111,22 @@
                     <div>22:00</div>
                     <div>23:00</div>
                     <div>00:00</div>
-                    <div>01:00</div>
-                    <div>02:00</div>
+                    
                 </div>
                 <!--Fiecare div cu clasa "ora" reprezinta o coloana in care se contine un div cu data si toate restul trebuie sa contina
                 evenimente din google api si regimul de somn-->
                 <div class="ora" id="1day">
                     <div id="date1">
+                    </div>  
+                    {% for hour_generated in hours_generated %}  
+                    <div>
+                    {%if hour_generated == 1 %}               
+                    <div class="sleep-time"></div>
                     </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    {%endif%}
+                    {%endfor%}
                 </div>
-                <div class="ora" id="2day">
+                <div class="ora" >
                     <div id="date2">
                     </div>
                     <div></div>
@@ -163,12 +152,12 @@
                     <div></div>
                     <div></div>
                 </div>
-                <div class="ora" id="3day">
+                <div class="ora" >
                     <div id="date3">
                     </div>
                     <div></div>
                     <div>
-                        <div id="sleep-time">Wake up</div>
+                        <div class="sleep-time">Wake up fdsfs fdfs fdf aa</div>
                     </div>
                     <div></div>
                     <div></div>
@@ -192,7 +181,7 @@
                     <div></div>
                 </div>
 
-                <div class="ora" id="4day">
+                <div class="ora">
                     <div id="date4">
                     </div>
                     <div></div>
@@ -218,7 +207,7 @@
                     <div></div>
                     <div></div>
                 </div>
-                <div class="ora" id="5day">
+                <div class="ora">
                     <div id="date5">
                     </div>
                     <div></div>
@@ -244,7 +233,7 @@
                     <div></div>
                     <div></div>
                 </div>
-                <div class="ora" id="6day">
+                <div class="ora">
                     <div id="date6">
                     </div>
                     <div></div>
@@ -270,7 +259,7 @@
                     <div></div>
                     <div></div>
                 </div>
-                <div class="ora" id="7day">
+                <div class="ora">
                     <div id="date7">
                     </div>
                     <div></div>
@@ -301,19 +290,19 @@
         </div>
         <div class="plot-container">
             <div class="plot-size">
-                <h2>Hours </h2>
+                <h2>Average hours sleept</h2>
                 <div class="plot">
                     <canvas id="line-chart1" width="500" height="300"></canvas>
                 </div>
             </div>
             <div class="plot-size">
-                <h2>Plot name</h2>
+                <h2>Sleep quality</h2>
                 <div class="plot">
                     <canvas id="line-chart2" width="500" height="300"></canvas>
                 </div>
             </div>
             <div class="plot-size">
-                <h2>Plot name</h2>
+                <h2>IDS</h2>
                 <div class="plot">
                     <canvas id="line-chart3" width="500" height="300"></canvas>
                 </div>

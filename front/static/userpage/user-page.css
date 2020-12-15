@@ -133,9 +133,30 @@ body{
     margin:auto;
     margin-top:50px;
     padding:20px;
-  padding-left:0;
-  padding-right:0;
+    padding-left:0;
+    padding-right:0;
 
+  }
+  .google {
+  margin: 20px;
+  padding-top:10px;
+  margin-left: 20px;
+  margin-left: 50px;
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 230px;
+  height: 45px;
+  background: #75C0D8;
+  border-radius: 30px;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+  .google a{
+    font-family: 'Sansita', sans-serif;
+    font-size:1.4em;
+    text-decoration:none;
+    color:white;
   }
   .calendar{
     
@@ -163,7 +184,7 @@ background: #75bfd85e;
   height:30px;
   border-bottom:1px solid #75C0D8;
 }
-#sleep-time{
+.sleep-time{
   background-color:#F0D8D8;
   border-radius:5px;
 }

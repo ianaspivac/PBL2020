@@ -1,4 +1,8 @@
 
+
+
+
+//hours_generated={schedule.hours_generated};
 //Toate variabilele utilizate cu date ale utilizatorului
 
 var recomended_sleep_hours = 60; //orele de dormit recomandate pe o saptamana
@@ -13,10 +17,10 @@ var risk_number_1= "2";
 document.getElementById("risk-number-1").innerHTML = risk_number_1 +"/100";
 
 //plot data
-let data1 = [1, 2, 10, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-let data2 = [1, 2, 10, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-let data3 = [1, 2, 10, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-let data4 = [1, 2, 10, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+let data1 = [6, 7, 10, 5, 5, 6, 7, 8, 9, 9, 8, 7];
+let data2 = [80, 76, 78, 90, 87, 78, 89, 80, 60, 65, 76, 70];
+let data3 = [9, 7, 10, 5, 5, 6, 7, 8, 9, 10, 10, 10];
+
 
 
 
@@ -122,7 +126,7 @@ new Chart(document.getElementById("line-chart1"), {
           data1[10],
           data1[11],
         ],
-        label: "Hours",
+        label: "Average hours sleept",
         borderColor: "#75C0D8",
         fill: false,
       },
@@ -163,7 +167,7 @@ new Chart(document.getElementById("line-chart2"), {
           data2[10],
           data2[11],
         ],
-        label: "Hours slept",
+        label: "Sleep Quality %",
         borderColor: "#75C0D8",
         fill: false,
       },
@@ -204,7 +208,7 @@ new Chart(document.getElementById("line-chart3"), {
           data3[10],
           data3[11],
         ],
-        label: "Hours slept",
+        label: "IDS %",
         borderColor: "#75C0D8",
         fill: false,
       },
