@@ -8,12 +8,12 @@
 var recomended_sleep_hours = 60; //orele de dormit recomandate pe o saptamana
 var recomended_quality = 100;
 var value_hours = 45; //orele dormite de utilizator intr-o saptamana
-var value_quality = 60; //calitatea somnului de la 0 la 100
+var value_quality = 60.5; //calitatea somnului de la 0 la 100
 
 
 
 //Cat e de mare riscul in cifre
-var risk_number_1= "2";
+var risk_number_1= "25.6";
 document.getElementById("risk-number-1").innerHTML = risk_number_1 +"/100";
 
 //plot data
@@ -83,7 +83,7 @@ var bar2 = new ProgressBar.Circle('#progress-circle2', {
     }
 });
 bar2.text.style.fontFamily = "'Sansita', sans-serif";
-bar2.text.style.fontSize = '2.5em';
+bar2.text.style.fontSize = '2.2em';
 
 bar2.animate(value_quality);
 

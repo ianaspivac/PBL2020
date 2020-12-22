@@ -6,7 +6,10 @@ body {
 .logo {
   text-align: center;
 }
-
+.logo img{
+  width:300px;
+  height:200px;
+}
 .container-login {
   display: flex;
   align-content: center;
@@ -47,7 +50,6 @@ body {
   text-align: center;
   font-family: "Sansita", sans-serif;
   font-size: 2em;
-  padding-top: 5em;
 }
 
 input[type="email"],

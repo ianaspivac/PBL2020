@@ -78,7 +78,7 @@ body{
   .number-risk{ 
     text-align: center;
     margin:80px;
-      font-size:4em; 
+      font-size:3em; 
   }
   .plot-container {
       margin:auto;
@@ -139,22 +139,19 @@ body{
   }
   .google {
   margin: 20px;
-  padding-top:10px;
-  margin-left: 20px;
-  margin-left: 50px;
   cursor: pointer;
   display: flex;
   align-content: center;
   justify-content: center;
-  width: 230px;
-  height: 45px;
+  width: 280px;
+  height: 40px;
   background: #75C0D8;
   border-radius: 30px;
   box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 }
   .google a{
     font-family: 'Sansita', sans-serif;
-    font-size:1.4em;
+    font-size:1.8em;
     text-decoration:none;
     color:white;
   }
@@ -252,4 +249,8 @@ background: #75bfd85e;
      font-size:15px;
    }
   }
+  .buttons{
+    display:flex;
+    flex-direction: row;
+}
   

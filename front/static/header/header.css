@@ -11,7 +11,6 @@
     justify-content: space-between;
     width: 100vw;
     max-width: 100%;
-    padding: 10px;
     box-shadow: 5px 3px 20px #8888885e;
 }
 
@@ -20,6 +19,8 @@
     flex-direction: row;
     margin-left: auto;
     margin-right: 10%;
+    padding-top:10px;
+    height:35px;
 }
 
 .login, .register {
@@ -44,6 +45,7 @@
 }
 
 .logo {
+    height:50px;
     margin-left: 4%;
     color:#000000; 
     font-family: 'Sansita', sans-serif;
@@ -56,4 +58,10 @@
 
 .register:hover {
     box-shadow: 0px 0px 10px 3px  rgba(0, 0, 0, 0.062);
+}
+.navigation a{
+    text-decoration: none;
+    color:black;
+    cursor:pointer;
+    height:20px;
 }
